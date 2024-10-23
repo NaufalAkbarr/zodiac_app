@@ -1,5 +1,4 @@
 class Zodiac {
-  final String status;
   final String date;
   final String aries;
   final String taurus;
@@ -15,7 +14,6 @@ class Zodiac {
   final String pisces;
 
   Zodiac({
-    required this.status,
     required this.date,
     required this.aries,
     required this.taurus,
@@ -33,7 +31,6 @@ class Zodiac {
 
   factory Zodiac.fromJson(Map<String, dynamic> json) {
     return Zodiac(
-      status: json['status'],
       date: json['date'],
       aries: json['aries'],
       taurus: json['taurus'],
